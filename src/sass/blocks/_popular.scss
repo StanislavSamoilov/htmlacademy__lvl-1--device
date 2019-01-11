@@ -1,0 +1,115 @@
+.popular {
+  margin-bottom: 81px;
+}
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-right: -40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular__item {
+  position: relative;
+
+  width: 200px;
+  padding-top: 193px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 160px;
+    height: 160px;
+
+    background-color: rgba($color: $yellow, $alpha: .5);
+  }
+  
+  &:hover::before,
+  &:focus::before {
+    background-color: $yellow;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
+  &--vr::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 31px;
+
+    width: 97px;
+    height: 55px;
+
+    background-image: url('../img/popular-1.svg');
+  }
+
+  &--selfie::after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: 38px;
+
+    width: 86px;
+    height: 117px;
+
+    background-image: url('../img/popular-2.svg');
+  }
+
+  &--camera::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 49px;
+
+    width: 71px;
+    height: 87px;
+
+    background-image: url('../img/popular-3.svg');
+  }
+
+  &--bracer::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 28px;
+
+    width: 107px;
+    height: 65px;
+
+    background-image: url('../img/popular-4.svg');
+  }
+
+  &--clock::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 55px;
+
+    width: 56px;
+    height: 98px;
+
+    background-image: url('../img/popular-5.svg');
+  }
+
+  &--quadcopter::after {
+    content: "";
+    position: absolute;
+    top: 49px;
+    left: 13px;
+
+    width: 132px;
+    height: 69px;
+
+    background-image: url('../img/popular-6.svg');
+  }
+}

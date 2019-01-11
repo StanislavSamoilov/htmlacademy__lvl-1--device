@@ -1,0 +1,47 @@
+@mixin gilroy-light {
+  font : {
+    family: $font-gilroy;
+    weight: 300;
+  }
+}
+
+@mixin gilroy-exbold {
+  font : {
+    family: $font-gilroy;
+    weight: 800;
+  }
+}
+
+@mixin open-sans-light {
+  font : {
+    family: $font-open-sans;
+    weight: 300;
+  }
+}
+
+@mixin open-sans-normal {
+  font : {
+    family: $font-open-sans;
+    weight: 400;
+  }
+}
+
+@mixin light-text {
+  @include open-sans-light;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+@mixin bold-text {
+  @include gilroy-exbold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+// @mixin fullImage {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: 0 0;
+// }

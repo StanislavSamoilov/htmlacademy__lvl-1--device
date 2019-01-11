@@ -1,0 +1,159 @@
+.write-us {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  z-index: 12;
+
+  display: none;
+  box-sizing: border-box;
+  width: 960px;
+  padding: 0 100px;
+  padding-top: 95px;
+  padding-bottom: 75px;
+  margin-left: -480px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba($color: #040606, $alpha: .2);
+}
+
+.write-us--show {
+  display: block;
+}
+
+.write-us__wrapper {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: 32px;
+}
+
+.write-us__label {
+  width: 360px;
+  letter-spacing: 0;
+}
+
+.write-us__input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 50px;
+  margin-top: 8px;
+  padding: 15px 20px;
+
+  border: none;
+
+  @include open-sans-normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: rgba($color: $gray, $alpha: .4);
+
+  background-color: rgba($color: #e5e5e5, $alpha: .5);
+
+  &:hover {
+    background-color: rgba($color: #e5e5e5, $alpha: .8);
+  }
+
+  &:focus {
+    color: rgba($color: $gray, $alpha: 1);
+
+    border: 3px solid rgba($color: $yellow, $alpha: .5);
+    background-color: rgba($color: #e5e5e5, $alpha: .0);
+  }
+
+  &:invalid {
+    border: none;
+    background-color: rgba($color: #edb5b5, $alpha: .5);
+  }
+
+  &--text {
+    width: 760px;
+    height: 156px;
+
+    resize: none;
+  }
+}
+
+.write-us__submit {
+  position: relative;
+
+  width: 200px;
+  height: 40px;
+  margin-top: 36px;
+
+  font: inherit;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: rgba($color: #000000, $alpha: 1.0);
+
+  border: none;
+  background-color: inherit;
+
+  &:active {
+    color: rgba($color: #000000, $alpha: .3);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 8px;
+
+    background-color: $yellow;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    height: 40px;
+
+    top: 0;
+  }
+}
+
+.write-us__close {
+  position: absolute;
+  top: 24px;
+  right: 21px;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: rgba($color: $yellow, $alpha: 0.5);
+  border: none;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color: $yellow, $alpha: 1);
+  }
+
+  &:active {
+    background-color: rgba($color: $yellow, $alpha: 0.3);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 12px;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}

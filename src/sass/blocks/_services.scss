@@ -1,0 +1,157 @@
+.services {
+  position: relative;
+
+  margin-bottom: 140px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 288px;
+    background-color: #e5e5e5;
+  }
+}
+
+.services__wrapper {
+ display: flex;
+}
+
+.services__controls {
+  position: relative;
+
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  padding-top: 56px;
+
+  list-style: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 277px;
+
+    width: 7px;
+    height: 319px;
+
+    background-color: #000000;
+  }
+}
+
+.services__control {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  margin-top: 24px;
+  padding: 8px 0;
+
+  text-align: center;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+
+    width: 160px;
+    height: 8px;
+
+    background-color: $yellow;
+  }
+
+  &:hover::before {
+    top: 0px;
+
+    height: 40px;
+  }
+
+  &--active {
+    width: 277px;
+    padding-right: 110px;
+    background-color: #000000;
+    color: #f7e184;
+  }
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__item {
+  position: relative;
+
+  display: none;
+
+  &--delivery::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -257px;
+
+    width: 136px;
+    height: 164px;
+    background-image: url('../img/delivery.svg');
+  }
+
+  &--warranty::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: -277px;
+
+    width: 171px;
+    height: 195px;
+    background-image: url('../img/warranty.svg');
+  }
+
+  &--credit::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: -253px;
+
+    width: 156px;
+    height: 188px;
+    background-image: url('../img/credit.svg');
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.services__header {
+  margin: 0;
+  margin-top: 75px;
+  margin-left: 2px;
+  padding: 0;
+
+  font-size: 47px;
+  line-height: 47px;
+  letter-spacing: 0.47px;
+}
+
+.services__info {
+  width: 437px;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  @include light-text;
+  color: $gray;
+}

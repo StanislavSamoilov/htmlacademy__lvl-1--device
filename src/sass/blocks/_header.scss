@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+
+  box-sizing: border-box;
+  min-height: 186px;
+  margin-top: 40px;
+  padding: 0 60px;
+  padding-top: 34px;
+  padding-bottom: 24px;
+
+  background-color: rgba($color: $yellow, $alpha: 0.5);
+}
+
+.header__logo {
+  position: absolute;
+  top: -25px;
+  left: 57px;
+
+  cursor: auto;
+  
+  &:hover,
+  &:focus {
+    color: rgba($color: #000000, $alpha: 1);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 1);
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

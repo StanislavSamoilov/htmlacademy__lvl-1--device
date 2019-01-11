@@ -1,0 +1,17 @@
+.logo {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+}

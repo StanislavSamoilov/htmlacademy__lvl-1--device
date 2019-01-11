@@ -1,0 +1,24 @@
+@import-normalize;
+
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixins';
+@import './base/global';
+
+@import './blocks/logo';
+@import './blocks/header';
+@import './blocks/search';
+@import './blocks/user-nav';
+@import './blocks/site-nav';
+
+@import './blocks/slider';
+@import './blocks/popular';
+@import './blocks/services';
+@import './blocks/companies';
+@import './blocks/info';
+
+@import './blocks/footer';
+@import './blocks/social';
+
+@import './blocks/write-us';
+@import './blocks/map';

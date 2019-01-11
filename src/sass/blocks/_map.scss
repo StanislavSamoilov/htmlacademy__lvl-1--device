@@ -1,0 +1,12 @@
+.map {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 12;
+
+  display: none;
+  height: 559px;
+  margin-left: -480px;
+
+  box-shadow: 0 10px 20px rgba($color: #040606, $alpha: .2);
+}
