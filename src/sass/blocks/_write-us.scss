@@ -16,8 +16,17 @@
   box-shadow: 0 10px 20px rgba($color: #040606, $alpha: .2);
 }
 
+@keyframes bounce {
+	0% 	 { transform: translateY(-2000px);	}
+	70%  { transform: translateY(30px); 	}
+	90%  { transform: translateY(-10px); 	}
+	100% { transform: translateY(0); 		}
+}
+
 .write-us--show {
   display: block;
+	animation-name: bounce;
+	animation-duration: 0.6s;
 }
 
 .write-us__wrapper {
@@ -115,7 +124,7 @@
   }
 }
 
-.write-us__close {
+.write-us__button {
   position: absolute;
   top: 24px;
   right: 21px;
