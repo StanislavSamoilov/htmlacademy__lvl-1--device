@@ -12,7 +12,8 @@
 </div>
 
 <body>
-  <header class="container header">
+<div class="container">
+  <header class="header">
     <a class="logo header__logo">Device</a>
     <nav>
       <div class="header__wrapper">
@@ -21,7 +22,6 @@
           <button class="search__button" type="submit">Найти</button>
         </form>
         <ul class="user-nav">
-          <!-- Войти -> Выйти + Ник(Самойлов Станислав) -->
           <li class="user-nav__item user-nav__item--profile">
             <a class="user-nav__link" href="#"></a>
           </li>
@@ -76,9 +76,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+</div>
+<main>
+  <div class="container">
     <h1 class="visually-hidden">Магазин гаджетов «Device»</h1>
-    <section class="container slider">
+    <section class="slider">
       <ul class="slider__controls">
         <li class="slider__control slider__control--active"></li>
         <li class="slider__control"></li>
@@ -147,7 +149,7 @@
         </li>
       </ul>
     </section>
-    <section class="container popular">
+    <section class="popular">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
         <li class="popular__item popular__item--vr"><a href="#">Виртуальная реальность</a></li>
@@ -158,38 +160,40 @@
         <li class="popular__item popular__item--quadcopter"><a href="#">Квадрокоптеры</a></li>
       </ul>
     </section>
-    <section class="services">
-      <h2 class="visually-hidden">Сервисы</h2>
-      <div class="services__wrapper container">
-        <ul class="services__controls">
-          <li class="services__control services__control--active">Доставка</li>
-          <li class="services__control">Гарантия</li>
-          <li class="services__control">Кредит</li>
-        </ul>
-        <ul class="services__list">
-          <li class="services__item services__item--delivery services__item--active">
-            <h3 class="services__header">Доставка</h3>
-            <p class="services__info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services__item services__item--warranty">
-            <h3 class="services__header">Гарантия</h3>
-            <p class="services__info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services__item services__item--credit">
-            <h3 class="services__header">Кредит</h3>
-            <p class="services__info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="container companies">
+  </div>
+  <section class="services">
+    <h2 class="visually-hidden">Сервисы</h2>
+    <div class="services__wrapper container">
+      <ul class="services__controls">
+        <li class="services__control services__control--active">Доставка</li>
+        <li class="services__control">Гарантия</li>
+        <li class="services__control">Кредит</li>
+      </ul>
+      <ul class="services__list">
+        <li class="services__item services__item--delivery services__item--active">
+          <h3 class="services__header">Доставка</h3>
+          <p class="services__info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </li>
+        <li class="services__item services__item--warranty">
+          <h3 class="services__header">Гарантия</h3>
+          <p class="services__info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+        </li>
+        <li class="services__item services__item--credit">
+          <h3 class="services__header">Кредит</h3>
+          <p class="services__info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="container">
+    <section class="companies">
       <h2 class="visually-hidden">Компании партнеры</h2>
       <a href="#"><img class="companies__logo" src="./img/logo-1.jpg" width="260" height="100" alt="Логотип DJI"></a>
       <a href="#"><img class="companies__logo" src="./img/logo-2.jpg" width="260" height="100" alt="Логотип SP Gadgets"></a>
       <a href="#"><img class="companies__logo" src="./img/logo-3.jpg" width="260" height="100" alt="Логотип GoPro Hero"></a>
       <a href="#"><img class="companies__logo" src="./img/logo-4.jpg" width="260" height="100" alt="Логотип VIVE"></a>
     </section>
-    <section class="container info">
+    <section class="info">
       <div class="info__wrapper-about-us">
         <h2 class="info__header">О нас</h2>
         <p class="info__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -205,97 +209,99 @@
         <h2 class="info__header">Контакты</h2>
         <p class="info__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img class="info__map-fallback map--open" src="./img/map.png" width="560" height="222" alt="Адрес нашего офиса: г. Москва, ул. Строителей, 15">
-        <!-- <iframe src="" frameborder="0"></iframe> -->
         <a class="info__link write-us--open" href="#">Нaпишите нам</a>
       </div>
     </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__alignment container">
-      <div class="footer__wrapper">
-        <a class="logo footer__logo">Device</a>
-        <ul class="user-nav footer__user-nav">
-          <!-- Войти -> Выйти + Ник(Самойлов Станислав) -->
-          <li class="user-nav__item user-nav__item--profile">
-            <a class="user-nav__link" href="#"></a>
-          </li>
-          <li class="user-nav__item user-nav__item--login">
-            <a class="user-nav__link" href="#">
-              <svg class="user-nav__icon user-nav__icon--login" width="13" height="12">
-                <use xlink:href="#icon-user"></use>
-              </svg>Войти</a>
-          </li>
-          <!-- / -->
-          <li class="user-nav__item user-nav__item--compare">
-            <a class="user-nav__link" href="#">
-              <svg class="user-nav__icon user-nav__icon--compare" width="10" height="10">
-                <use xlink:href="#icon-compare"></use>
-              </svg>Сравнить</a>
-          </li>
-          <li class="user-nav__item user-nav__item--cart">
-            <a class="user-nav__link" href="#">
-              <svg class="user-nav__icon user-nav__icon--cart" width="12" height="12">
-                <use xlink:href="#icon-cart"></use>
-              </svg>Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__wrapper">
-        <span class="footer__info">г. Москва, ул. Строителей, 15</span>
-        <ul class="footer__site-nav">
-          <li><a class="footer__site-nav-link" href="#">Доставка</a></li>
-          <li><a class="footer__site-nav-link" href="#">Гарантия</a></li>
-          <li><a class="footer__site-nav-link" href="#">Контакты</a></li>
-        </ul>  
-        <span class="footer__info">Тел.: +7 (495) 495-95-95</span>
-      </div>
-      <div class="footer__wrapper">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" >
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-        <a class="footer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <svg class="footer__logo-html" width="26.943" height="34.09">
-            <use xlink:href="#icon-logo-html"></use>
-          </svg><span class="visually-hidden">HTML-Academy</span>
-        </a>
-      </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__alignment container">
+    <div class="footer__wrapper">
+      <a class="logo footer__logo">Device</a>
+      <ul class="user-nav footer__user-nav">
+        <li class="user-nav__item user-nav__item--profile">
+          <a class="user-nav__link" href="#"></a>
+        </li>
+        <li class="user-nav__item user-nav__item--login">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--login" width="13" height="12">
+              <use xlink:href="#icon-user"></use>
+            </svg>Войти</a>
+        </li>
+        <!-- / -->
+        <li class="user-nav__item user-nav__item--compare">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--compare" width="10" height="10">
+              <use xlink:href="#icon-compare"></use>
+            </svg>Сравнить</a>
+        </li>
+        <li class="user-nav__item user-nav__item--cart">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--cart" width="12" height="12">
+              <use xlink:href="#icon-cart"></use>
+            </svg>Корзина</a>
+        </li>
+      </ul>
     </div>
-  </footer>
+    <div class="footer__wrapper">
+      <span class="footer__info">г. Москва, ул. Строителей, 15</span>
+      <ul class="footer__site-nav">
+        <li><a class="footer__site-nav-link" href="#">Доставка</a></li>
+        <li><a class="footer__site-nav-link" href="#">Гарантия</a></li>
+        <li><a class="footer__site-nav-link" href="#">Контакты</a></li>
+      </ul>  
+      <span class="footer__info">Тел.: +7 (495) 495-95-95</span>
+    </div>
+    <div class="footer__wrapper">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#" >
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg class="footer__logo-html" width="26.943" height="34.09">
+          <use xlink:href="#icon-logo-html"></use>
+        </svg><span class="visually-hidden">HTML-Academy</span>
+      </a>
+    </div>
+  </div>
+</footer>
 
-  <section class="write-us">
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <button class="write-us__button write-us--close" type="button"><span class="visually-hidden" >Закрыть</span></button>
-      <div class="write-us__wrapper">
-        <label class="write-us__label" for="write-name">Ваше имя:</label>
-        <label class="write-us__label" for="write-email">Ваш e-mail:</label>
-        <input class="write-us__input" id="write-name" name="name" type="text" placeholder="Имя Фамилия">
-        <input class="write-us__input" id="write-email" name="email" type="email" placeholder="email@example.com">
-      </div>
-      <label class="write-us__label" for="write-text">Текст письма:</label>
-      <textarea class="write-us__input write-us__input--text" id="write-text" name="text" placeholder="В свободной форме"></textarea>
-      <button class="write-us__submit" type="submit">Отправить</button>
-    </form>
-  </section>
+<section class="write-us">
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <button class="write-us__button write-us--close" type="button"><span class="visually-hidden" >Закрыть</span></button>
+    <div class="write-us__wrapper">
+      <label class="write-us__label" for="write-name">Ваше имя:</label>
+      <label class="write-us__label" for="write-email">Ваш e-mail:</label>
+      <input class="write-us__input" id="write-name" name="name" type="text" placeholder="Имя Фамилия">
+      <input class="write-us__input" id="write-email" name="email" type="email" placeholder="email@example.com">
+    </div>
+    <label class="write-us__label" for="write-text">Текст письма:</label>
+    <textarea class="write-us__input write-us__input--text" id="write-text" name="text" placeholder="В свободной форме"></textarea>
+    <button class="write-us__submit" type="submit">Отправить</button>
+  </form>
+</section>
 
-  <section class="map">
-    <button class="map--close write-us__button" type="button"><span class="visually-hidden">Закрыть</span></button>
+<section class="map">
+  <button class="map--close write-us__button" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <div class="map__wrapper">
     <img class="map__fallback" src="./img/map-big.png" width="960" height="559" alt="Адрес нашего офиса: г. Москва, ул. Строителей, 15">
-  </section>
+    <iframe class="map__online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779953!2d37.52742931561666!3d55.68703098053586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2sby!4v1502280616067" frameborder="0" style="border:0"  allowfullscreen width="960" height="559"></iframe>
+  </div>
+</section>
 
-  <script src="./js/bundle.js"></script>
+<script src="./js/bundle.min.js"></script>
 </body>
 </html>

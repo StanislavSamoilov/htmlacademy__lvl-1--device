@@ -29,7 +29,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 91px;
+    bottom: 41px;
     left: 20px;
     z-index: 1;
 
@@ -116,11 +116,11 @@
 
   display: flex;
   justify-content: space-between;
-  width: 430px;
+  width: 464px;
   margin: 0;
   padding: 0;
   padding-top: 5px;
-  padding-right: 35px;
+  padding-right: 36px;
 
   list-style: none;
 }

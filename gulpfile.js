@@ -32,11 +32,8 @@ gulp.task('clean', function() {
 });
 
 gulp.task("copy", function() {
-  return gulp.src([
-      './src/fonts/**/*.{woff,woff2}', 
-      // './src/*.ico', 
-      // './src/manifest.json'
-    ], {
+  return gulp.src('./src/fonts/**/*.{woff,woff2}', 
+    {
       base: './src'
     })
 	.pipe(gulp.dest('./build'));
@@ -67,7 +64,7 @@ gulp.task('style', function() {
       require('postcss-normalize')(),
       require('autoprefixer')()
     ]))
-    .pipe(csso())
+    .pipe(gulpIf(!isDevelopment, csso()))
     .pipe(rename({
       extname: '.min.css'
     }))
@@ -102,7 +99,6 @@ gulp.task('clean-svg', function () {
       attributes: [
         'id',
         'style',
-        // 'fill*',
         'clip*',
         'stroke*'
       ],
@@ -129,23 +125,21 @@ gulp.task('sprite:clean', function() {
 	return del('./build/img/icon-*.svg');
 });
 
-gulp.task('sprite', gulp.series('sprite:create', 'sprite:clean'));
+gulp.task('sprite', gulp.series('sprite:create', 'sprite:clean', 'html'));
 
 gulp.task('images', gulp.series(
   gulp.series('images:min', 'clean-svg', 'sprite'),
   reload
-  //Browsersync.reload()
 ));
 
-let options = (isDevelopment) => {
+const options = (isDevelopment) => {
   const path = require('path');
 
   return {
     mode: isDevelopment ? 'development' : 'production',
     entry: './src/js/main.js',
     output: {
-      filename: './js/bundle.js',
-      // path: path.resolve(__dirname, 'build')
+      filename: './js/bundle.min.js'
     },
   };
 };
@@ -175,8 +169,7 @@ gulp.task('watch', function() {
 gulp.task('build', gulp.series(
   'clean', 
   'copy', 
-  gulp.parallel('style', 'images', 'scripts'),
-  'html'
+  gulp.parallel('style', 'images', 'scripts')
 ));
 
 gulp.task('start', gulp.series(

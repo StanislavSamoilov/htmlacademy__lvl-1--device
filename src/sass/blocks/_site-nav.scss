@@ -43,7 +43,6 @@
 
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  color: #000000;
 
   &:hover,
   &:focus {
@@ -92,7 +91,7 @@
     left: -60px;
     width: 1160px;
     height: 163px;
-    background-color: #f7e296;
+    background-color: $yellow-light;
   }
 }
 
@@ -108,7 +107,6 @@
 .site-nav__catalog-link {
   @include light-text;
   line-height: 36px;
-  color: #000000;
 
   &:hover,
   &:focus {
