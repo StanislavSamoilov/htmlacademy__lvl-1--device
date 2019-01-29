@@ -4,7 +4,7 @@
   margin-bottom: 140px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 100px;
     left: 0;
@@ -17,7 +17,7 @@
 }
 
 .services__wrapper {
- display: flex;
+  display: flex;
 }
 
 .services__controls {
@@ -31,7 +31,7 @@
   list-style: none;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 277px;
@@ -58,7 +58,7 @@
   cursor: pointer;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 16px;
     left: 0;
@@ -97,7 +97,7 @@
   display: none;
 
   &--delivery::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 10px;
     right: -257px;
@@ -108,7 +108,7 @@
   }
 
   &--warranty::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -14px;
     right: -277px;
@@ -119,7 +119,7 @@
   }
 
   &--credit::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -14px;
     right: -253px;

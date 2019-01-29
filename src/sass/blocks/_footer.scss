@@ -4,7 +4,7 @@
   margin-top: 83px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
   color: #ffffff;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 41px;
     left: 20px;
@@ -73,8 +73,12 @@
 }
 
 .footer__user-nav {
+  & .user-nav__icon {
+    fill: rgba($color: $yellow, $alpha: 1);
+  }
+
   & .user-nav__link {
-    color: rgba($color: #ffffff, $alpha: .7);
+    color: rgba($color: #ffffff, $alpha: 0.7);
 
     &:hover,
     &:focus {
@@ -83,24 +87,20 @@
 
     &:hover .user-nav__icon,
     &:focus .user-nav__icon {
-      fill: rgba($color: $yellow, $alpha: .6)
-    }  
+      fill: rgba($color: $yellow, $alpha: 0.6);
+    }
 
     &:active {
-      color: rgba($color: #ffffff, $alpha: .3);
+      color: rgba($color: #ffffff, $alpha: 0.3);
     }
 
     &:active .user-nav__icon {
-      fill: rgba($color: $yellow, $alpha: .3)
+      fill: rgba($color: $yellow, $alpha: 0.3);
     }
   }
 
   & .user-nav__item--login {
     padding-left: 175px;
-  }
-
-  & .user-nav__icon {
-    fill: rgba($color: $yellow, $alpha: 1)
   }
 }
 
@@ -140,6 +140,10 @@
   }
 }
 
+.footer__logo-html {
+  fill: rgba($color: $yellow, $alpha: 1);
+}
+
 .footer__link {
   position: absolute;
   top: -2px;
@@ -147,14 +151,10 @@
 
   &:hover .footer__logo-html,
   &:focus .footer__logo-html {
-    fill: rgba($color: $yellow, $alpha: .6);
+    fill: rgba($color: $yellow, $alpha: 0.6);
   }
 
   &:active .footer__logo-html {
-    fill: rgba($color: $yellow, $alpha: .3);
+    fill: rgba($color: $yellow, $alpha: 0.3);
   }
-}
-
-.footer__logo-html {
-  fill: rgba($color: $yellow, $alpha: 1);
 }

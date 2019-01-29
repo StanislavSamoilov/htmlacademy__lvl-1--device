@@ -13,20 +13,28 @@
   margin-left: -480px;
 
   background-color: #ffffff;
-  box-shadow: 0 10px 20px rgba($color: #040606, $alpha: .2);
+  box-shadow: 0 10px 20px rgba($color: #040606, $alpha: 0.2);
 }
 
 @keyframes bounce {
-	0% 	 { transform: translateY(-2000px);	}
-	70%  { transform: translateY(30px); 	}
-	90%  { transform: translateY(-10px); 	}
-	100% { transform: translateY(0); 		}
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .write-us--show {
   display: block;
-	animation-name: bounce;
-	animation-duration: 0.6s;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .write-us__wrapper {
@@ -56,24 +64,24 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
-  color: rgba($color: $gray, $alpha: .4);
+  color: rgba($color: $gray, $alpha: 0.4);
 
-  background-color: rgba($color: #e5e5e5, $alpha: .5);
+  background-color: rgba($color: #e5e5e5, $alpha: 0.5);
 
   &:hover {
-    background-color: rgba($color: #e5e5e5, $alpha: .8);
+    background-color: rgba($color: #e5e5e5, $alpha: 0.8);
   }
 
   &:focus {
     color: rgba($color: $gray, $alpha: 1);
 
-    border: 3px solid rgba($color: $yellow, $alpha: .5);
-    background-color: rgba($color: #e5e5e5, $alpha: .0);
+    border: 3px solid rgba($color: $yellow, $alpha: 0.5);
+    background-color: rgba($color: #e5e5e5, $alpha: 0);
   }
 
   &:invalid {
     border: none;
-    background-color: rgba($color: #edb5b5, $alpha: .5);
+    background-color: rgba($color: #edb5b5, $alpha: 0.5);
   }
 
   &--text {
@@ -94,17 +102,17 @@
   font: inherit;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  color: rgba($color: #000000, $alpha: 1.0);
+  color: rgba($color: #000000, $alpha: 1);
 
   border: none;
   background-color: inherit;
 
   &:active {
-    color: rgba($color: #000000, $alpha: .3);
+    color: rgba($color: #000000, $alpha: 0.3);
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 16px;
     left: 0;
@@ -148,7 +156,7 @@
 
   &::after,
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 27px;
     left: 12px;
