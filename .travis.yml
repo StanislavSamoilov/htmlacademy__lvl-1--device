@@ -1,11 +1,8 @@
 language: node_js
-
 node_js:
   - stable
-
 script:
   - npm run prod
-
 deploy:
   provider: pages
   skip_cleanup: true
