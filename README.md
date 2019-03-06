@@ -1,5 +1,5 @@
 # htmlacademy__lvl-1--device
-### Training project
+### Training project, Static Site
 
 GitHub Pages: https://stanislavsamoilov.github.io/htmlacademy__lvl-1--device/
 
